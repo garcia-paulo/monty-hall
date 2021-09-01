@@ -9,9 +9,6 @@ const MontyHall: React.FC = () => {
 
     const router = useRouter()
     const { winner } = router.query;
-    if (!winner) {
-        return <></>;
-    }
 
     const selectDoor = (index: number) => {
         console.log(doors);
@@ -56,6 +53,14 @@ const MontyHall: React.FC = () => {
 
     const [doors, setDoors] = useState(createDoors(qtyDoors, winnerNum));
     const [_, reload] = useState({});
+
+    useEffect(() => {
+        setDoors(createDoors(qtyDoors, winnerNum));
+    }, [router.query])
+
+    if (!winner) {
+        return <></>;
+    }
 
     return (
         <div className={styles.body}>
