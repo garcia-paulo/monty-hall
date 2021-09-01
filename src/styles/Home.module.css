@@ -8,8 +8,8 @@
 .card {
   display: flex;
   flex-direction: column;
-  width: 30vh;
-  height: 30vh;
+  width: 40vh;
+  height: 40vh;
   margin: 3px 1.5px;
   font-size: 2rem;
   padding: 20px;
