@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 30vh;
+  height: 30vh;
+  margin: 3px 1.5px;
+  font-size: 2rem;
+  padding: 20px;
+  user-select: none;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 90%);
+  margin: 5px;
+  width: 7.5vh;
+  height: 7.5vh;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.tl {
+  background-color: brown;
+  color: white;
+}
+
+.tr {
+  background-color: white;
+  color: black;
+  justify-content: center;
+  align-items: center;
+}
+
+.bl {
+  background-color: white;
+  color: black;
+  justify-content: center;
+  align-items: center;
+}
+
+.br{
+  background-color: teal;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  font-size: 1.5rem;
+  color: #555;
+}
+
+.value{
+  font-size: 6rem;
+}
